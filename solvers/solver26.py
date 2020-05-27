@@ -23,6 +23,11 @@ class Solver(BertEmbedder):
         self.duplicates = self.config["duplicates"]
         self.classifier = LogisticRegression(verbose=10)
         self.label_encoder = LabelEncoder()
+        path = "data/solver26.pkl"
+        model = joblib.load(path)
+        self.classifier = model["classifier"]
+        self.label_encoder = model["label_encoder"]        
+        
         self.synonyms = open('./data/synmaster.txt', 'r', encoding='utf8').readlines()
         self.synonyms = [re.sub('\.','', t.lower().strip('\n')).split('|') for t in self.synonyms if len(t)>5]
         self.antonyms = open('./data/antonyms.txt', 'r', encoding='utf8').readlines()
