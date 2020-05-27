@@ -554,12 +554,13 @@ class Solver(BertEmbedder):
         y = self.label_encoder.fit_transform(self.types)
         self.classifier.fit(X, y)
 
-    def load(self, path="data/models/solver26.pkl"):
+    def load(self, path="data/data/solver26.pkl"):
         model = joblib.load(path)
         self.classifier = model["classifier"]
         self.label_encoder = model["label_encoder"]
 
     def save(self, path="data/models/solver26.pkl"):
-        model = {"classifier": self.classifier,
-                 "label_encoder": self.label_encoder}
-        joblib.dump(model, path)
+        #model = {"classifier": self.classifier,
+        #         "label_encoder": self.label_encoder}
+        #joblib.dump(model, path)
+        print("h")
