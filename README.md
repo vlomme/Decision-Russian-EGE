@@ -1,5 +1,5 @@
-# Решение тестовой части ЕГЭ по русскому
-
+### Решение тестовой части ЕГЭ по русскому в [соревновании AI Journey](https://contest.ai-journey.ru/ru/leaderboard). Получившее приз за лучшее решение тестовой части
+[![youtube](https://img.youtube.com/vi/XfCe_xWvVgY/0.jpg)](http://www.youtube.com/watch?v=XfCe_xWvVgY)
 ## Использование [Colab](https://colab.research.google.com/github/vlomme/Decision-Russian-EGE/blob/master/Decision_Russian_EGE.ipynb)
 - Поместите ваши задания в task.csv в нужном формате
 - Запустите `python solution_run.py`
