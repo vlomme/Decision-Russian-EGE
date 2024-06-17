@@ -15,5 +15,5 @@ fastai==1.0.52
 fuzzywuzzy==0.17.0
 Keras==2.2.4
 pymorphy2==0.8
-scikit_learn==0.21.3
+scikit_learn==1.5.0
 summa==1.2.0
